@@ -48,3 +48,11 @@ x86/
 
 # VS hashed intermediate dirs (e.g. ProjectName.<hash>/)
 *.*[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f]/
+
+# CMake
+out/
+CMakeFiles/
+CMakeCache.txt
+
+# Render output
+image.ppm
