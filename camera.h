@@ -93,12 +93,15 @@ private:
 
     color ray_color(const ray& r, const hittable& world) const
     {
+        // Computes the color of a ray as it interacts with hittable. 
+        // If hit, return a color based on the hit record
         hit_record rec;
         if (world.hit(r, interval(0, infinity), rec))
         {
             return 0.5 * (rec.normal + color(1,1,1));
         }
 
+        // if not hit, return a gradient based on the ray's direction if no intersection occurs.
         vec3 unit_direction = unit_vector(r.direction());
         auto a = 0.5*(unit_direction.y() + 1.0);
         return (1.0-a)*color(1.0, 1.0, 1.0) + a*color(0.5, 0.7, 1.0);
