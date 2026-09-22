@@ -28,7 +28,8 @@ int main()
 	cam.image_width 		= 800;
     cam.samples_per_pixel 	= 100;
 	cam.max_depth         	= 50;
-	
+	cam.vfov 				= 90;
+
 	cam.render(world);
 
 	return 0;
