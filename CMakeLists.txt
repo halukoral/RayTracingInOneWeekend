@@ -10,6 +10,8 @@ add_executable(RayTracingInOneWeekend
     ray.h
     vec3.h
     hittable.h
+    hittable_list.h
+    rtweekend.h
     sphere.h
 )
 
