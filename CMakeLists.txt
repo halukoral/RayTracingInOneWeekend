@@ -9,6 +9,8 @@ add_executable(RayTracingInOneWeekend
     color.h
     ray.h
     vec3.h
+    hittable.h
+    sphere.h
 )
 
 set(PPM_OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/image.ppm")
