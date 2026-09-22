@@ -15,6 +15,7 @@ add_executable(RayTracingInOneWeekend
     rtweekend.h
     sphere.h
     interval.h
+    material.h
 )
 
 set(PPM_OUTPUT "${CMAKE_CURRENT_SOURCE_DIR}/image.ppm")
