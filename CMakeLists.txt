@@ -9,6 +9,7 @@ add_executable(RayTracingInOneWeekend
     color.h
     ray.h
     vec3.h
+    camera.h
     hittable.h
     hittable_list.h
     rtweekend.h
